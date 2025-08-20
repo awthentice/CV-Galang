@@ -1,166 +1,150 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Galang</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
       margin: 0;
-      padding: 0;
-      background: #f9f9fb;
-      color: #333;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
     }
     .page {
-      background: white;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.15);
-      padding: 20px;
-    }
-    header {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      border-bottom: 3px solid #0077b6;
-      padding-bottom: 15px;
-      margin-bottom: 25px;
-      gap: 20px;
-    }
-    header h1 {
-      font-size: 28px;
-      margin: 0;
-      color: #023e8a;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    header .tagline {
-      font-size: 14px;
-      color: #555;
-      margin-top: 4px;
-    }
-    .contact-info {
-      border-left: 2px solid #90e0ef;
-      padding-left: 15px;
-      font-size: 13px;
-      color: #444;
-    }
-    .contact-info p {
-      margin: 2px 0;
+      width: 210mm;        /* Ukuran A4 */
+      min-height: 297mm;   /* Tinggi minimum A4 */
+      height: auto;        /* Auto panjang */
+      background: #fff;
+      padding: 20mm;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
       display: flex;
-      align-items: center;
-      gap: 6px;
+      flex-direction: column;
     }
-    .icon {
+    .header {
+      border-bottom: 3px solid #007BFF;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #007BFF;
+    }
+    .header p {
+      margin: 5px 0 0;
       font-size: 14px;
-      color: #0077b6;
+      color: #333;
     }
-    section {
-      margin-bottom: 18px;
+    .contact {
+      text-align: right;
+      font-size: 12px;
+      color: #555;
+      margin-top: -40px;
+    }
+    .contact p {
+      margin: 2px 0;
     }
     h2 {
       font-size: 18px;
-      color: #0077b6;
-      border-bottom: 2px solid #90e0ef;
-      padding-bottom: 4px;
-      margin-bottom: 10px;
+      margin-top: 25px;
+      margin-bottom: 8px;
+      color: #007BFF;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+    }
+    .section p, .section li {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #333;
     }
     ul {
-      margin: 0;
-      padding-left: 18px;
+      margin: 5px 0 15px 20px;
     }
-    li {
-      margin-bottom: 6px;
-    }
-    .two-columns {
+    .skills {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }/* 📱 Tampilan di HP / layar kecil */
-@media screen and (max-width: 768px) {
-  .page {
-    width: 100%;
-    min-height: auto;
-    padding: 15px;
-    box-shadow: none;
-  }
-  header {
-    grid-template-columns: 1fr;
-    text-align: left;
-  }
-  .contact-info {
-    border-left: none;
-    padding-left: 0;
-    margin-top: 10px;
-  }
-  .two-columns {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* 🖨️ Format untuk cetak PDF (A4) */
-@media print {
-  body {
-    background: white;
-  }
-  .page {
-    width: 210mm;
-    min-height: 297mm;
-    padding: 20mm;
-    box-shadow: none;
-  }
-}
-
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 20px;
+    }
+    .footer {
+      border-top: 1px solid #ccc;
+      margin-top: auto;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 12px;
+      color: #555;
+    }
+    .footer a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <div class="page">
-    <header>
-      <div>
-        <h1>Galang</h1>
-        <p class="tagline">Finance & Technology Enthusiast | Problem Solver | Fast Learner</p>
+    <!-- Header -->
+    <div class="header">
+      <h1>GALANG</h1>
+      <p>Finance & Technology Enthusiast | Problem Solver | Fast Learner</p>
+      <div class="contact">
+        <p>Email: aqtife@gmail.com</p>
+        <p>Telp/WA: +62 821-2464-3403</p>
+        <p>Alamat: Mangga Dua VIII Blok B No.73 RT 13/05, Jakarta Utara</p>
       </div>
-      <div class="contact-info">
-        <p><span class="icon">✉</span> aqtife@gmail.com</p>
-        <p><span class="icon">☎</span> +62 821-2464-3403</p>
-        <p><span class="icon">📍</span> Mangga Dua VIII Blok B No.73, Jakarta Utara</p>
+    </div>
+
+    <!-- Ringkasan Profesional -->
+    <div class="section">
+      <h2>Ringkasan Profesional</h2>
+      <p>
+        Saya adalah individu yang disiplin, pekerja keras, dan komunikatif dengan pengalaman kerja di berbagai bidang operasional. 
+        Memiliki kemampuan membaca dan menganalisis berita keuangan, trading, serta investasi. 
+        Selain itu, saya juga menguasai keterampilan coding dasar (HTML, CSS, JavaScript) yang mendukung perkembangan teknologi. 
+        Dengan kemampuan multitasking, problem solving, dan manajemen waktu yang baik, saya siap berkontribusi untuk mendukung keberhasilan tim maupun perusahaan.
+      </p>
+    </div>
+
+    <!-- Pengalaman Kerja -->
+    <div class="section">
+      <h2>Pengalaman Kerja</h2>
+      <ul>
+        <li><b>Karyawan Kebersihan</b> – Menjaga kebersihan, kerapihan, dan kenyamanan lingkungan kerja.</li>
+        <li><b>Helper Produksi</b> – Membantu proses produksi di perusahaan manufaktur, multitasking di berbagai lini produksi.</li>
+        <li><b>Penjaga Stand Thai Tea</b> – Melayani pelanggan, mengelola penjualan, dan menjaga kualitas produk.</li>
+      </ul>
+    </div>
+
+    <!-- Keterampilan -->
+    <div class="section">
+      <h2>Keterampilan</h2>
+      <div class="skills">
+        <p>• Finance & Investment</p>
+        <p>• HTML, CSS, JavaScript</p>
+        <p>• Trading</p>
+        <p>• Problem Solving</p>
+        <p>• Analisis Berita Keuangan</p>
+        <p>• Manajemen Waktu</p>
       </div>
-    </header><section>
-  <h2>Ringkasan Profesional</h2>
-  <p>Saya adalah individu yang disiplin, pekerja keras, dan komunikatif dengan pengalaman kerja di berbagai bidang operasional. Memiliki kemampuan membaca dan menganalisis berita keuangan, trading, serta investasi. Selain itu, saya juga menguasai keterampilan coding dasar (HTML, CSS, JavaScript) yang mendukung perkembangan teknologi. Dengan kemampuan multitasking, problem solving, dan manajemen waktu yang baik, saya siap berkontribusi untuk mendukung keberhasilan tim maupun perusahaan.</p>
-</section>
+    </div>
 
-<section>
-  <h2>Pengalaman Kerja</h2>
-  <ul>
-    <li><strong>Karyawan Kebersihan</strong> – Menjaga kebersihan, kerapihan, dan kenyamanan lingkungan kerja.</li>
-    <li><strong>Helper Produksi</strong> – Membantu proses produksi di perusahaan manufaktur, multitasking di berbagai lini produksi.</li>
-    <li><strong>Penjaga Stand Thai Tea</strong> – Melayani pelanggan, mengelola penjualan, dan menjaga kualitas produk.</li>
-  </ul>
-</section>
+    <!-- Pendidikan -->
+    <div class="section">
+      <h2>Pendidikan</h2>
+      <p><b>Lulusan Sekolah Dasar (SD)</b></p>
+    </div>
 
-<section>
-  <h2>Keterampilan</h2>
-  <div class="two-columns">
-    <ul>
-      <li>Finance & Investment</li>
-      <li>Trading</li>
-      <li>Analisis Berita Keuangan</li>
-    </ul>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Problem Solving</li>
-      <li>Manajemen Waktu</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Pendidikan</h2>
-  <ul>
-    <li><strong>Lulusan Sekolah Dasar (SD)</strong></li>
-  </ul>
-</section>
-
+    <!-- Footer Portfolio -->
+    <div class="footer">
+      <p>Portfolio: 
+        <a href="https://awthentice.github.io/MyStartup-/" target="_blank">MyStartup</a> | 
+        <a href="https://awthentice.github.io/Card-Profile/" target="_blank">Card Profile</a>
+      </p>
+    </div>
   </div>
 </body>
 </html>
