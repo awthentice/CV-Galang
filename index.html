@@ -7,167 +7,129 @@
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f9f9f9;
+      margin: 40px;
       color: #333;
+      line-height: 1.6;
     }
-
-    .container {
-      width: 210mm;
-      min-height: 297mm;
-      background: #fff;
-      margin: auto;
-      padding: 20mm;
-      box-sizing: border-box;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #999; /* tipis untuk kategori */
-      padding-bottom: 5px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    h2 i {
-      color: #0a66c2;
-    }
-
-    .tagline {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
     .header {
       display: flex;
       justify-content: space-between;
-      border-bottom: 3px solid #333; /* garis header tebal */
-      padding-bottom: 10px;
-      margin-bottom: 30px; /* lebih jauh jaraknya */
-    }
-
-    .contact {
-      text-align: right;
-      font-size: 14px;
-    }
-
-    .contact div {
-      margin-bottom: 5px;
-      display: flex;
-      justify-content: flex-end;
       align-items: center;
-      gap: 6px;
-    }
-
-    .section {
+      border-bottom: 3px solid #000;
+      padding-bottom: 10px;
       margin-bottom: 15px;
     }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
-
-    .skill-box {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 8px;
-      background: #fafafa;
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
+    .tagline {
       font-size: 14px;
+      color: #555;
+      margin-top: 5px;
     }
-
-    .skill-box i {
-      margin-top: 3px;
-      color: #0a66c2;
+    .info {
+      font-size: 13px;
+      text-align: right;
     }
-
+    h2 {
+      font-size: 18px;
+      margin-top: 20px;
+      border-bottom: 1px solid #888;
+      padding-bottom: 4px;
+      text-transform: uppercase;
+    }
+    ul {
+      margin: 5px 0 0 20px;
+    }
+    p {
+      margin: 5px 0;
+    }
     .footer {
-      text-align: center;
-      margin-top: 10px;
-      font-size: 14px;
+      margin-top: 20px;
+      font-size: 13px;
     }
-
     .footer a {
       text-decoration: none;
-      color: #0a66c2;
-      font-weight: 500;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
+      color: #333;
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header">
-      <div>
-        <h1>Galang</h1>
-        <div class="tagline">Membangun solusi dengan disiplin, kreativitas, dan semangat belajar tanpa henti.</div>
-      </div>
-      <div class="contact">
-        <div><i class="fas fa-envelope"></i> oshinairu@gmail.com</div>
-        <div><i class="fab fa-whatsapp"></i> +62 821-2464-3404</div>
-        <div><i class="fas fa-map-marker-alt"></i> Mangga Dua, Jakarta</div>
-      </div>
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <h1>GALANG</h1>
+      <div class="tagline">Finance & Technology Enthusiast | Problem Solver | Fast Learner</div>
     </div>
+    <div class="info">
+      ✉ oshinairu@gmail.com <br>
+      ☎ +62 821-2464-3404 <br>
+      📍 Mangga Dua VII Blok B No.73, Jakarta Utara
+    </div>
+  </div>
 
-    <!-- Ringkasan Profesional -->
-    <div class="section">
-      <h2><i class="fas fa-user"></i> Ringkasan Profesional</h2>
-      <p>Seorang individu yang disiplin dan adaptif dengan minat besar pada dunia finance, investasi, serta pengembangan web. Berpengalaman belajar secara otodidak, mampu memahami berita keuangan, analisis pasar, hingga pembuatan website sederhana. Aktif dalam organisasi masyarakat dan berkomitmen untuk terus mengasah keterampilan teknis maupun soft skills.</p>
-    </div>
+  <!-- Ringkasan -->
+  <h2>👤 Ringkasan Profesional</h2>
+  <p>
+    Individu disiplin, pekerja keras, dan komunikatif dengan pengalaman kerja di bidang operasional. 
+    Saat ini bekerja di PT TCP Internusa sebagai Karyawan Kebersihan sejak 2022. 
+    Memiliki minat kuat pada dunia keuangan & teknologi: membaca berita keuangan, menganalisis investasi & trading, 
+    serta menguasai dasar HTML, CSS, dan JavaScript untuk pembuatan web sederhana. 
+    Berbekal multitasking, problem solving, dan manajemen waktu, siap beradaptasi dan memberi kontribusi nyata.
+  </p>
 
-    <!-- Keterampilan -->
-    <div class="section">
-      <h2><i class="fas fa-tools"></i> Keterampilan</h2>
-      <div class="skills-grid">
-        <div class="skill-box"><i class="fas fa-chart-line"></i> <span><b>Finance & Investment:</b> memahami dasar manajemen keuangan, investasi, dan risiko.</span></div>
-        <div class="skill-box"><i class="fas fa-exchange-alt"></i> <span><b>Trading:</b> analisis pasar dan strategi trading jangka pendek maupun panjang.</span></div>
-        <div class="skill-box"><i class="fas fa-code"></i> <span><b>Web Development:</b> pembuatan website sederhana dengan HTML, CSS, dan JavaScript.</span></div>
-        <div class="skill-box"><i class="fas fa-lightbulb"></i> <span><b>Problem Solving:</b> kemampuan berpikir kritis untuk mencari solusi efektif.</span></div>
-        <div class="skill-box"><i class="fas fa-clock"></i> <span><b>Manajemen Waktu:</b> menyusun prioritas untuk mencapai target tepat waktu.</span></div>
-        <div class="skill-box"><i class="fas fa-users"></i> <span><b>Kerja Tim:</b> membangun kerja sama dan komunikasi dalam tim yang dinamis.</span></div>
-      </div>
-    </div>
+  <!-- Pengalaman -->
+  <h2>💼 Pengalaman Kerja</h2>
+  <p><b>Karyawan Kebersihan — PT TCP Internusa (2022 – Sekarang)</b></p>
+  <ul>
+    <li>Menjaga kebersihan, kerapihan, dan kenyamanan area kerja sesuai standar perusahaan.</li>
+    <li>Mendukung kelancaran aktivitas operasional dengan memastikan lingkungan kerja aman dan teratur.</li>
+    <li>Terbiasa bekerja disiplin, konsisten, serta berkoordinasi dengan tim.</li>
+  </ul>
 
-    <!-- Pendidikan -->
-    <div class="section">
-      <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
-      <p><b>SD Negeri Tanah Tinggi 06 Pagi</b> (2014 – 2020)<br>
-      Menyelesaikan pendidikan dasar dengan penekanan pada disiplin, kerja sama, serta keterampilan komunikasi.</p>
-      <p><b>Pembelajaran Otodidak (Self-Learning)</b> (2020 – Sekarang)<br>
-      Secara konsisten mempelajari finance, trading, pengembangan web, serta soft skills melalui sumber daring dan praktik langsung.</p>
-    </div>
+  <!-- Organisasi -->
+  <h2>🤝 Organisasi</h2>
+  <p><b>Anggota Paguyuban — Mangga Dua (2023 – Sekarang)</b></p>
+  <ul>
+    <li>Aktif dalam kegiatan sosial dan kemasyarakatan di lingkungan tempat tinggal.</li>
+    <li>Berpartisipasi dalam program gotong royong dan koordinasi antarwarga untuk meningkatkan kebersamaan.</li>
+    <li>Melatih kemampuan komunikasi, kerja sama tim, dan kepedulian terhadap masyarakat.</li>
+  </ul>
 
-    <!-- Organisasi -->
-    <div class="section">
-      <h2><i class="fas fa-handshake"></i> Pengalaman Organisasi</h2>
-      <p><b>Anggota Paguyuban Warga Mangga Dua</b> (2023 – Sekarang)<br>
-      Aktif dalam organisasi kemasyarakatan di lingkungan Mangga Dua yang beranggotakan bapak-bapak dan pemuda. Berkontribusi dalam kegiatan sosial, koordinasi acara lingkungan, serta menjaga solidaritas antarwarga.</p>
-    </div>
+  <!-- Keterampilan -->
+  <h2>🛠️ Keterampilan</h2>
+  <ul>
+    <li>💰 Finance & Investment – Memahami dasar manajemen keuangan & strategi investasi.</li>
+    <li>📈 Trading – Membaca pergerakan pasar & mengambil keputusan cepat.</li>
+    <li>📰 Analisis Berita Keuangan – Mengikuti berita ekonomi untuk menilai dampak bisnis.</li>
+    <li>💻 HTML, CSS, JavaScript – Dasar pembuatan website sederhana.</li>
+    <li>🧩 Problem Solving – Menemukan solusi efektif ketika menghadapi kendala.</li>
+    <li>⏰ Manajemen Waktu – Mengatur prioritas agar target kerja tercapai.</li>
+  </ul>
 
-    <!-- Footer -->
-    <div class="footer">
-      <a href="https://github.com/awthentice">github.com/awthentice</a>
-    </div>
+  <!-- Pendidikan -->
+  <h2>🎓 Pendidikan</h2>
+  <ul>
+    <li>
+      SD Negeri Tanah Tinggi 06 Pagi (2014 – 2020)  
+      <br><span style="font-size:13px; color:#555;">
+        Menyelesaikan pendidikan dasar dengan baik, membentuk kedisiplinan, kerja sama, dan tanggung jawab.
+      </span>
+    </li>
+    <li>
+      Belajar Mandiri: Finance, Trading, HTML, CSS, JavaScript  
+      <br><span style="font-size:13px; color:#555;">
+        Mengembangkan keterampilan melalui sumber belajar online & praktik langsung, fokus pada bidang keuangan dan teknologi.
+      </span>
+    </li>
+  </ul>
+
+  <!-- Footer -->
+  <div class="footer">
+     <a href="https://github.com/awthentice">github.com/awthentice</a>
   </div>
 </body>
 </html>
