@@ -1,266 +1,142 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>CV - Galang</title>
-<style>
-  :root{
-    --ink:#0f172a;        /* slate-900 */
-    --muted:#475569;      /* slate-600 */
-    --line:#e2e8f0;       /* slate-200 */
-    --brand:#0ea5e9;      /* sky-500 */
-    --brand-2:#0284c7;    /* sky-600 */
-    --bg:#ffffff;
-  }
-  *{box-sizing:border-box}
-  html,body{height:100%;background:#0b1220;margin:0}
-  body{display:flex;align-items:flex-start;justify-content:center;padding:24px;font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
-  /* A4 canvas */
-  .page{
-    width:210mm; height:297mm; background:var(--bg); color:var(--ink);
-    box-shadow:0 8px 22px rgba(2,8,23,.25); border-radius:12px; overflow:hidden;
-    display:flex; flex-direction:column; justify-content:space-between;
-  }
-  .content{padding:18mm 16mm 14mm 16mm;}
-  h1,h2,h3{margin:0}
-  /* header */
-  .header{
-    display:grid; grid-template-columns:1fr auto; gap:16px; align-items:center; margin-bottom:14mm;
-    border-bottom:2px solid var(--line); padding-bottom:8mm;
-  }
-  .who .name{font-size:28px; letter-spacing:.4px; font-weight:800;}
-  .who .tagline{margin-top:6px; color:var(--muted); font-weight:600; font-size:13.5px}
-  .contact{
-    display:flex; gap:14px; align-items:flex-start; border-left:4px solid var(--brand);
-    padding-left:14px;
-    font-size:13px; color:var(--ink)
-  }
-  .contact .item{display:flex; align-items:center; gap:8px; white-space:nowrap}
-  .chip{display:inline-flex; align-items:center; gap:6px; padding:4px 8px; border:1px solid var(--line); border-radius:999px; font-size:12px; color:var(--muted)}
-  /* sections */
-  .section{margin-bottom:12mm}
-  .sec-title{
-    display:flex; align-items:center; gap:10px; font-size:15px; text-transform:uppercase; letter-spacing:.8px; color:var(--brand-2); font-weight:800; margin-bottom:8px
-  }
-  .sec-title svg{width:18px; height:18px; stroke:var(--brand-2)}
-  .rule{height:3px; background:linear-gradient(90deg,var(--brand),transparent); border-radius:3px; margin-bottom:10px}
-  .text{font-size:13.5px; line-height:1.65; color:var(--ink)}
-  /* two-column blocks */
-  .cols{display:grid; grid-template-columns:1fr 1fr; gap:18px}
-  /* experience */
-  .xp .role{font-weight:700}
-  .xp .desc{color:var(--muted)}
-  .xp li{margin:8px 0}
-  /* skills */
-  .skills-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px 18px}
-  .skill{
-    border:1px solid var(--line); border-radius:10px; padding:10px 12px;
-    display:grid; grid-template-columns:auto 1fr; gap:10px; align-items:flex-start;
-  }
-  .skill svg{width:18px; height:18px; stroke:var(--brand)}
-  .skill .name{font-weight:700}
-  .skill .hint{font-size:12.5px; color:var(--muted); margin-top:2px}
-  /* education */
-  .edu .item{display:flex; align-items:center; gap:10px; font-weight:700}
-  /* footer */
-  footer{
-    background:linear-gradient(180deg, #f8fafc, #eef6ff);
-    border-top:1px solid var(--line);
-    padding:10mm 16mm;
-  }
-  .foot-title{display:flex; align-items:center; gap:8px; font-weight:800; color:var(--brand-2); text-transform:uppercase; letter-spacing:.8px; margin-bottom:6px}
-  .links{display:flex; gap:12px; flex-wrap:wrap}
-  .links a{
-    text-decoration:none; color:var(--brand-2); border:1px solid var(--line); padding:6px 10px; border-radius:10px; font-size:12.5px
-  }
-  /* print */
-  @page{size:A4; margin:0}
-  @media print{
-    html,body{background:#fff; padding:0}
-    .page{box-shadow:none; border-radius:0}
-  }
-  /* small screens */
-  @media (max-width:860px){
-    body{padding:12px}
-    .content{padding:14mm 12mm 10mm 12mm}
-    .cols{grid-template-columns:1fr}
-    .header{grid-template-columns:1fr}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Galang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px;
+      color: #333;
+      line-height: 1.5;
+      max-width: 800px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+      color: #111;
+    }
+    .tagline {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .contact {
+      font-size: 13px;
+      color: #444;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+    .contact i {
+      margin-right: 6px;
+      color: #0073b1;
+    }
+    .header-line {
+      border-bottom: 3px solid #0073b1;
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-size: 16px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #0073b1;
+    }
+    h2 i {
+      margin-right: 8px;
+    }
+    .section {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin: 5px 0 10px 20px;
+      font-size: 13px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .skill-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 13px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      background: #fafafa;
+    }
+    .skill-card i {
+      color: #0073b1;
+      font-size: 15px;
+      margin-top: 2px;
+    }
+    .divider {
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 25px;
+      color: #555;
+    }
+    .footer i {
+      margin-right: 6px;
+    }
+  </style>
 </head>
 <body>
-  <main class="page" role="document" aria-label="Curriculum Vitae Galang">
-    <section class="content">
-      <!-- Header -->
-      <header class="header" aria-label="Header CV">
-        <div class="who">
-          <div class="name">GALANG</div>
-          <div class="tagline">Finance &amp; Technology Enthusiast &nbsp;|&nbsp; Problem Solver &nbsp;|&nbsp; Fast Learner</div>
-        </div>
-        <div class="contact" aria-label="Kontak">
-          <div class="item" title="Email">
-            <!-- mail icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M4 6h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z"/></svg>
-            <span>oshinairu@gmail.com</span>
-          </div>
-          <div class="item" title="Telepon">
-            <!-- phone icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2l3 6-2 2a16 16 0 006 6l2-2 6 3v2a2 2 0 01-2 2h-1C9.163 22 2 14.837 2 6V5z"/></svg>
-            <span>+62 821-2464-3404</span>
-          </div>
-          <div class="item" title="Alamat">
-            <!-- map pin icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11a4 4 0 100-8 4 4 0 000 8z"/><path stroke-linecap="round" stroke-linejoin="round" d="M20 11c0 5-8 10-8 10S4 16 4 11a8 8 0 1116 0z"/></svg>
-            <span>Mangga Dua VII Blok B No.73, Jakarta Utara</span>
-          </div>
-        </div>
-      </header>
+  <h1>GALANG</h1>
+  <div class="tagline">Finance & Technology Enthusiast | Problem Solver | Fast Learner</div>
+  
+  <div class="contact">
+    <div><i class="fa-solid fa-envelope"></i> oshinairu@gmail.com</div>
+    <div><i class="fa-brands fa-whatsapp"></i> +62 821-2464-3404</div>
+    <div><i class="fa-solid fa-location-dot"></i> Mangga Dua VII Blok B No.73, Jakarta Utara</div>
+  </div>
+  <div class="header-line"></div>
 
-      <!-- Ringkasan Profesional -->
-      <section class="section">
-        <div class="sec-title">
-          <!-- spark icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v4m0 10v4M3 12h4m10 0h4M5.64 5.64l2.83 2.83m7.06 7.06l2.83 2.83M5.64 18.36l2.83-2.83m7.06-7.06l2.83-2.83"/></svg>
-          <span>Ringkasan Profesional</span>
-        </div>
-        <div class="rule"></div>
-        <p class="text">
-          Individu yang disiplin, pekerja keras, dan komunikatif dengan pengalaman kerja
-          di berbagai fungsi operasional. Terbiasa menjaga standar kebersihan dan
-          keamanan tempat kerja, membantu alur produksi di lingkungan manufaktur, serta
-          melayani pelanggan di front line. Di sisi lain, saya memiliki minat kuat pada
-          dunia keuangan dan teknologi: mampu membaca serta menganalisis berita
-          keuangan, memahami prinsip investasi dan trading secara bertanggung jawab, dan
-          menguasai dasar-dasar <b>HTML, CSS, dan JavaScript</b> untuk membuat antarmuka web
-          sederhana. Dengan kemampuan multitasking, problem solving, dan manajemen waktu
-          yang baik, saya siap belajar cepat, beradaptasi, dan memberikan kontribusi
-          nyata bagi target tim maupun perusahaan.
-        </p>
-      </section>
+  <h2><i class="fa-solid fa-user-tie"></i> Ringkasan Profesional</h2>
+  <div class="section">
+    Individu yang disiplin, pekerja keras, dan komunikatif dengan pengalaman kerja di berbagai fungsi operasional. Terbiasa menjaga kebersihan, keamanan, serta mendukung produksi di lingkungan manufaktur, dan melayani pelanggan di front line. Memiliki minat kuat pada dunia keuangan & teknologi: mampu membaca berita keuangan, menganalisis investasi & trading secara bertanggung jawab, serta menguasai dasar HTML, CSS, dan JavaScript untuk pembuatan web sederhana. Berbekal multitasking, problem solving, dan manajemen waktu, siap belajar cepat, beradaptasi, dan memberi kontribusi nyata bagi target tim maupun perusahaan.
+  </div>
 
-      <!-- Pengalaman & Keterampilan (2 kolom) -->
-      <section class="cols">
-        <!-- Pengalaman Kerja -->
-        <div>
-          <div class="sec-title">
-            <!-- briefcase icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6V5a2 2 0 012-2h0a2 2 0 012 2v1m5 3H5a2 2 0 00-2 2v6a2 2 0 002 2h14a2 2 0 002-2v-6a2 2 0 00-2-2z"/></svg>
-            <span>Pengalaman Kerja</span>
-          </div>
-          <div class="rule"></div>
-          <ul class="xp text" style="padding-left:18px; margin:0;">
-            <li>
-              <div class="role">Karyawan Kebersihan</div>
-              <div class="desc">Menjaga kebersihan, kerapihan, dan kenyamanan lingkungan kerja sesuai SOP keselamatan.</div>
-            </li>
-            <li>
-              <div class="role">Helper Produksi</div>
-              <div class="desc">Mendukung proses produksi di perusahaan manufaktur; cek bahan/alat, pindah barang, dan membantu di beberapa lini untuk memastikan target harian tercapai.</div>
-            </li>
-            <li>
-              <div class="role">Penjaga Stand Thai Tea</div>
-              <div class="desc">Melayani pelanggan, menerima pembayaran, mengelola stok sederhana, dan memastikan kualitas rasa produk tetap konsisten.</div>
-            </li>
-          </ul>
-        </div>
+  <div class="divider"></div>
 
-        <!-- Keterampilan -->
-        <div>
-          <div class="sec-title">
-            <!-- sparkles icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3l2 4 4 2-4 2-2 4-2-4-4-2 4-2 2-4zM16 13l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"/></svg>
-            <span>Keterampilan</span>
-          </div>
-          <div class="rule"></div>
+  <h2><i class="fa-solid fa-briefcase"></i> Pengalaman Kerja</h2>
+  <ul>
+    <li><b>Karyawan Kebersihan</b> – Menjaga kebersihan, kerapihan, dan kenyamanan lingkungan kerja sesuai SOP keselamatan.</li>
+    <li><b>Helper Produksi</b> – Mendukung proses produksi; cek bahan/alat, pindah barang, dan membantu di beberapa lini untuk memastikan target harian tercapai.</li>
+    <li><b>Penjaga Stand Thai Tea</b> – Melayani pelanggan, menerima pembayaran, mengelola stok sederhana, dan menjaga kualitas rasa produk konsisten.</li>
+  </ul>
 
-          <div class="skills-grid">
-            <!-- Finance & Investment -->
-            <div class="skill">
-              <!-- chart icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M7 13v5m5-9v9m5-13v13"/></svg>
-              <div>
-                <div class="name">Finance &amp; Investment</div>
-                <div class="hint">Memahami konsep dasar manajemen uang, risiko–return, dan penggunaan alat bantu sederhana untuk evaluasi investasi jangka pendek/panjang.</div>
-              </div>
-            </div>
-            <!-- Trading -->
-            <div class="skill">
-              <!-- candlestick icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M7 8h4v8H7M17 6v12M15 10h4v4h-4"/></svg>
-              <div>
-                <div class="name">Trading</div>
-                <div class="hint">Mampu membaca pergerakan harga dasar dan berita pasar; mengutamakan manajemen risiko, disiplin, dan pencatatan transaksi.</div>
-              </div>
-            </div>
-            <!-- Analisis Berita Keuangan -->
-            <div class="skill">
-              <!-- newspaper icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V7a3 3 0 013-3h12a3 3 0 013 3v11a2 2 0 01-2 2zM7 8h7m-7 4h10m-10 4h6"/></svg>
-              <div>
-                <div class="name">Analisis Berita Keuangan</div>
-                <div class="hint">Menyarikan berita inti (inflasi, suku bunga, kinerja emiten) dan dampaknya terhadap sentimen pasar maupun keputusan keuangan.</div>
-              </div>
-            </div>
-            <!-- HTML/CSS/JS -->
-            <div class="skill">
-              <!-- code icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16l-4-4 4-4M16 8l4 4-4 4M12 4l-2 16"/></svg>
-              <div>
-                <div class="name">HTML, CSS, JavaScript</div>
-                <div class="hint">Membangun halaman web sederhana yang bersih dan responsif, memahami struktur semantik dan gaya dasar antarmuka.</div>
-              </div>
-            </div>
-            <!-- Problem Solving -->
-            <div class="skill">
-              <!-- puzzle icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3h3a3 3 0 110 6H9v3h3a3 3 0 110 6H9v3H6a3 3 0 110-6H3v-3h3a3 3 0 110-6h3V3z"/></svg>
-              <div>
-                <div class="name">Problem Solving</div>
-                <div class="hint">Mengurai masalah menjadi langkah kecil, mencari akar penyebab, dan memilih solusi yang efektif serta dapat diukur.</div>
-              </div>
-            </div>
-            <!-- Manajemen Waktu -->
-            <div class="skill">
-              <!-- clock icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2M12 22a10 10 0 100-20 10 10 0 000 20z"/></svg>
-              <div>
-                <div class="name">Manajemen Waktu</div>
-                <div class="hint">Menyusun prioritas kerja, menjaga ketepatan waktu, dan menuntaskan tugas sesuai target harian.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="divider"></div>
 
-      <!-- Pendidikan -->
-      <section class="section edu">
-        <div class="sec-title">
-          <!-- graduation cap icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zM12 14v7m0-7l-6.16-3.42M12 14l6.16-3.42"/></svg>
-          <span>Pendidikan</span>
-        </div>
-        <div class="rule"></div>
-        <div class="item text">
-          <span>👨‍🎓</span> <span>Lulusan Sekolah Dasar (SD)</span>
-        </div>
-      </section>
-    </section>
+  <h2><i class="fa-solid fa-lightbulb"></i> Keterampilan</h2>
+  <div class="skills">
+    <div class="skill-card"><i class="fa-solid fa-coins"></i><span><b>Finance & Investment</b> – Memahami dasar manajemen keuangan dan strategi investasi jangka pendek maupun panjang.</span></div>
+    <div class="skill-card"><i class="fa-solid fa-chart-line"></i><span><b>Trading</b> – Mampu membaca pergerakan pasar dan mengambil keputusan cepat secara rasional.</span></div>
+    <div class="skill-card"><i class="fa-solid fa-newspaper"></i><span><b>Analisis Berita Keuangan</b> – Terbiasa mengikuti berita ekonomi untuk menilai dampak terhadap investasi dan bisnis.</span></div>
+    <div class="skill-card"><i class="fa-solid fa-code"></i><span><b>HTML, CSS, JavaScript</b> – Menguasai dasar pembuatan website sederhana dengan struktur, gaya, dan interaktivitas.</span></div>
+    <div class="skill-card"><i class="fa-solid fa-puzzle-piece"></i><span><b>Problem Solving</b> – Terampil menemukan solusi efektif ketika menghadapi kendala di pekerjaan.</span></div>
+    <div class="skill-card"><i class="fa-solid fa-clock"></i><span><b>Manajemen Waktu</b> – Mampu mengatur prioritas agar target kerja selesai tepat waktu.</span></div>
+  </div>
 
-    <!-- Footer Portfolio -->
-    <footer>
-      <div class="foot-title">
-        <!-- link icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6.75h3.75A2.75 2.75 0 0120 9.5v5a2.75 2.75 0 01-2.75 2.75h-3.75M10.5 17.25H6.75A2.75 2.75 0 014 14.5v-5A2.75 2.75 0 016.75 6.75H10.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h8"/></svg>
-        <span>Portfolio</span>
-      </div>
-      <div class="links">
-        <a href="https://awthentice.github.io/MyStartup-/" target="_blank" rel="noopener">MyStartup – Landing Page</a>
-        <a href="https://awthentice.github.io/Card-Profile/" target="_blank" rel="noopener">Card Profile</a>
-        <a href="https://github.com/awthentice" target="_blank" rel="noopener">GitHub: @awthentice</a>
-      </div>
-      <div class="chip" aria-label="Catatan Cetak">Siap dicetak A4 • 1 halaman</div>
-    </footer>
-  </main>
+  <div class="divider"></div>
+
+  <h2><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h2>
+  <div class="section">🎓 Lulusan Sekolah Dasar (SD)</div>
+
+  <div class="divider"></div>
+
+  <div class="footer">
+    <i class="fa-brands fa-github"></i> <a href="https://github.com/awthentice" target="_blank">github.com/awthentice</a>
+  </div>
 </body>
 </html>
