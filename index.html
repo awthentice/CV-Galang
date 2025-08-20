@@ -4,143 +4,170 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Galang</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 40px;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
       color: #333;
-      line-height: 1.5;
-      max-width: 800px;
     }
+
+    .container {
+      width: 210mm;
+      min-height: 297mm;
+      background: #fff;
+      margin: auto;
+      padding: 20mm;
+      box-sizing: border-box;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
     h1 {
       font-size: 28px;
       margin-bottom: 5px;
-      color: #111;
     }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #999; /* tipis untuk kategori */
+      padding-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2 i {
+      color: #0a66c2;
+    }
+
     .tagline {
       font-size: 14px;
       color: #555;
       margin-bottom: 15px;
     }
-    .contact {
-      font-size: 13px;
-      color: #444;
+
+    .header {
       display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      border-bottom: 3px solid #333; /* garis header tebal */
+      padding-bottom: 10px;
+      margin-bottom: 30px; /* lebih jauh jaraknya */
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    .contact div {
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section {
       margin-bottom: 15px;
     }
-    .contact i {
-      margin-right: 6px;
-      color: #0073b1;
-    }
-    .header-line {
-      border-bottom: 3px solid #0073b1;
-      margin-bottom: 25px;
-    }
-    h2 {
-      font-size: 16px;
-      margin-top: 25px;
-      margin-bottom: 10px;
-      color: #0073b1;
-    }
-    h2 i {
-      margin-right: 8px;
-    }
-    .section {
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
-    ul {
-      margin: 5px 0 10px 20px;
-      font-size: 13px;
-    }
-    .skills {
+
+    .skills-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
     }
-    .skill-card {
+
+    .skill-box {
       border: 1px solid #ddd;
       border-radius: 8px;
-      padding: 8px 10px;
-      font-size: 13px;
+      padding: 8px;
+      background: #fafafa;
       display: flex;
       align-items: flex-start;
       gap: 8px;
-      background: #fafafa;
+      font-size: 14px;
     }
-    .skill-card i {
-      color: #0073b1;
-      font-size: 15px;
-      margin-top: 2px;
+
+    .skill-box i {
+      margin-top: 3px;
+      color: #0a66c2;
     }
-    .divider {
-      border-top: 1px solid #ccc;
-      margin: 20px 0;
-    }
+
     .footer {
       text-align: center;
-      font-size: 12px;
-      margin-top: 25px;
-      color: #555;
+      margin-top: 10px;
+      font-size: 14px;
     }
-    .footer i {
-      margin-right: 6px;
+
+    .footer a {
+      text-decoration: none;
+      color: #0a66c2;
+      font-weight: 500;
     }
-    .nounderline {
-       text-decoration: none;
-       color: #0a66c2;
+
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <h1>GALANG</h1>
-  <div class="tagline">Finance & Technology Enthusiast | Problem Solver | Fast Learner</div>
-  
-  <div class="contact">
-    <div><i class="fa-solid fa-envelope"></i> oshinairu@gmail.com</div>
-    <div><i class="fa-brands fa-whatsapp"></i> +62 821-2464-3404</div>
-    <div><i class="fa-solid fa-location-dot"></i> Mangga Dua VII Blok B No.73, Jakarta Utara</div>
-  </div>
-  <div class="header-line"></div>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <h1>Galang</h1>
+        <div class="tagline">Membangun solusi dengan disiplin, kreativitas, dan semangat belajar tanpa henti.</div>
+      </div>
+      <div class="contact">
+        <div><i class="fas fa-envelope"></i> oshinairu@gmail.com</div>
+        <div><i class="fab fa-whatsapp"></i> +62 821-2464-3404</div>
+        <div><i class="fas fa-map-marker-alt"></i> Mangga Dua, Jakarta</div>
+      </div>
+    </div>
 
-  <h2><i class="fa-solid fa-user-tie"></i> Ringkasan Profesional</h2>
-  <div class="section">
-    Individu yang disiplin, pekerja keras, dan komunikatif dengan pengalaman kerja di berbagai fungsi operasional. Terbiasa menjaga kebersihan, keamanan, serta mendukung produksi di lingkungan manufaktur, dan melayani pelanggan di front line. Memiliki minat kuat pada dunia keuangan & teknologi: mampu membaca berita keuangan, menganalisis investasi & trading secara bertanggung jawab, serta menguasai dasar HTML, CSS, dan JavaScript untuk pembuatan web sederhana. Berbekal multitasking, problem solving, dan manajemen waktu, siap belajar cepat, beradaptasi, dan memberi kontribusi nyata bagi target tim maupun perusahaan.
-  </div>
+    <!-- Ringkasan Profesional -->
+    <div class="section">
+      <h2><i class="fas fa-user"></i> Ringkasan Profesional</h2>
+      <p>Seorang individu yang disiplin dan adaptif dengan minat besar pada dunia finance, investasi, serta pengembangan web. Berpengalaman belajar secara otodidak, mampu memahami berita keuangan, analisis pasar, hingga pembuatan website sederhana. Aktif dalam organisasi masyarakat dan berkomitmen untuk terus mengasah keterampilan teknis maupun soft skills.</p>
+    </div>
 
-  <div class="divider"></div>
+    <!-- Keterampilan -->
+    <div class="section">
+      <h2><i class="fas fa-tools"></i> Keterampilan</h2>
+      <div class="skills-grid">
+        <div class="skill-box"><i class="fas fa-chart-line"></i> <span><b>Finance & Investment:</b> memahami dasar manajemen keuangan, investasi, dan risiko.</span></div>
+        <div class="skill-box"><i class="fas fa-exchange-alt"></i> <span><b>Trading:</b> analisis pasar dan strategi trading jangka pendek maupun panjang.</span></div>
+        <div class="skill-box"><i class="fas fa-code"></i> <span><b>Web Development:</b> pembuatan website sederhana dengan HTML, CSS, dan JavaScript.</span></div>
+        <div class="skill-box"><i class="fas fa-lightbulb"></i> <span><b>Problem Solving:</b> kemampuan berpikir kritis untuk mencari solusi efektif.</span></div>
+        <div class="skill-box"><i class="fas fa-clock"></i> <span><b>Manajemen Waktu:</b> menyusun prioritas untuk mencapai target tepat waktu.</span></div>
+        <div class="skill-box"><i class="fas fa-users"></i> <span><b>Kerja Tim:</b> membangun kerja sama dan komunikasi dalam tim yang dinamis.</span></div>
+      </div>
+    </div>
 
-  <h2><i class="fa-solid fa-briefcase"></i> Pengalaman Kerja</h2>
-  <ul>
-    <li><b>Karyawan Kebersihan</b> – Menjaga kebersihan, kerapihan, dan kenyamanan lingkungan kerja sesuai SOP keselamatan.</li>
-    <li><b>Helper Produksi</b> – Mendukung proses produksi; cek bahan/alat, pindah barang, dan membantu di beberapa lini untuk memastikan target harian tercapai.</li>
-    <li><b>Penjaga Stand Thai Tea</b> – Melayani pelanggan, menerima pembayaran, mengelola stok sederhana, dan menjaga kualitas rasa produk konsisten.</li>
-  </ul>
+    <!-- Pendidikan -->
+    <div class="section">
+      <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
+      <p><b>SD Negeri Tanah Tinggi 06 Pagi</b> (2014 – 2020)<br>
+      Menyelesaikan pendidikan dasar dengan penekanan pada disiplin, kerja sama, serta keterampilan komunikasi.</p>
+      <p><b>Pembelajaran Otodidak (Self-Learning)</b> (2020 – Sekarang)<br>
+      Secara konsisten mempelajari finance, trading, pengembangan web, serta soft skills melalui sumber daring dan praktik langsung.</p>
+    </div>
 
-  <div class="divider"></div>
+    <!-- Organisasi -->
+    <div class="section">
+      <h2><i class="fas fa-handshake"></i> Pengalaman Organisasi</h2>
+      <p><b>Anggota Paguyuban Warga Mangga Dua</b> (2023 – Sekarang)<br>
+      Aktif dalam organisasi kemasyarakatan di lingkungan Mangga Dua yang beranggotakan bapak-bapak dan pemuda. Berkontribusi dalam kegiatan sosial, koordinasi acara lingkungan, serta menjaga solidaritas antarwarga.</p>
+    </div>
 
-  <h2><i class="fa-solid fa-lightbulb"></i> Keterampilan</h2>
-  <div class="skills">
-    <div class="skill-card"><i class="fa-solid fa-coins"></i><span><b>Finance & Investment</b> – Memahami dasar manajemen keuangan dan strategi investasi jangka pendek maupun panjang.</span></div>
-    <div class="skill-card"><i class="fa-solid fa-chart-line"></i><span><b>Trading</b> – Mampu membaca pergerakan pasar dan mengambil keputusan cepat secara rasional.</span></div>
-    <div class="skill-card"><i class="fa-solid fa-newspaper"></i><span><b>Analisis Berita Keuangan</b> – Terbiasa mengikuti berita ekonomi untuk menilai dampak terhadap investasi dan bisnis.</span></div>
-    <div class="skill-card"><i class="fa-solid fa-code"></i><span><b>HTML, CSS, JavaScript</b> – Menguasai dasar pembuatan website sederhana dengan struktur, gaya, dan interaktivitas.</span></div>
-    <div class="skill-card"><i class="fa-solid fa-puzzle-piece"></i><span><b>Problem Solving</b> – Terampil menemukan solusi efektif ketika menghadapi kendala di pekerjaan.</span></div>
-    <div class="skill-card"><i class="fa-solid fa-clock"></i><span><b>Manajemen Waktu</b> – Mampu mengatur prioritas agar target kerja selesai tepat waktu.</span></div>
-  </div>
-
-  <div class="divider"></div>
-
-  <h2><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h2>
-  <div class="section">🎓 Lulusan Sekolah Dasar (SD)</div>
-
-  <div class="divider"></div>
-
-  <div class="footer">
-    <i class="fa-brands fa-github"></i> <a href="https://github.com/awthentice" class="nounderline">github.com/awthentice</a>
+    <!-- Footer -->
+    <div class="footer">
+      <a href="https://github.com/awthentice">github.com/awthentice</a>
+    </div>
   </div>
 </body>
 </html>
