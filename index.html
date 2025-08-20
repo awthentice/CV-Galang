@@ -1,145 +1,166 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Galang</title>
   <style>
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 20px;
-      background: #f4f7fb;
-      font-size: 12px;
-      line-height: 1.5;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 25px 30px;
-    }
-    /* Header */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #0073e6;
-      margin-bottom: 15px;
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 22px;
-      color: #0073e6;
-    }
-    .contact {
-      text-align: right;
-      font-size: 11px;
-      line-height: 1.4;
+      padding: 0;
+      background: #f9f9fb;
       color: #333;
     }
-    .contact i {
-      font-size: 12px;
-      margin-right: 4px;
-      vertical-align: middle;
-      color: #0073e6;
+    .page {
+      background: white;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      padding: 20px;
     }
-    /* Section */
-    h2 {
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      border-bottom: 3px solid #0077b6;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+      gap: 20px;
+    }
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+      color: #023e8a;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    header .tagline {
+      font-size: 14px;
+      color: #555;
+      margin-top: 4px;
+    }
+    .contact-info {
+      border-left: 2px solid #90e0ef;
+      padding-left: 15px;
       font-size: 13px;
-      border-bottom: 1px solid #0073e6;
-      padding-bottom: 2px;
-      margin-top: 12px;
-      margin-bottom: 6px;
-      color: #0073e6;
+      color: #444;
     }
-    ul {
-      margin: 5px 0 8px 18px;
-    }
-    /* Skills as tags */
-    .skills {
+    .contact-info p {
+      margin: 2px 0;
       display: flex;
-      flex-wrap: wrap;
+      align-items: center;
       gap: 6px;
     }
-    .skill-tag {
-      background: #e6f0fa;
-      color: #005bb5;
-      padding: 4px 8px;
-      border-radius: 12px;
-      font-size: 11px;
+    .icon {
+      font-size: 14px;
+      color: #0077b6;
     }
-    /* Portfolio grid */
-    .portfolio {
+    section {
+      margin-bottom: 18px;
+    }
+    h2 {
+      font-size: 18px;
+      color: #0077b6;
+      border-bottom: 2px solid #90e0ef;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .two-columns {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 8px;
-    }
-    .portfolio-item {
-      background: #f9fbff;
-      border: 1px solid #e0e7f1;
-      border-radius: 6px;
-      padding: 8px;
-      font-size: 11.5px;
-    }
-    .portfolio-item b {
-      color: #0073e6;
-    }
+      gap: 20px;
+    }/* 📱 Tampilan di HP / layar kecil */
+@media screen and (max-width: 768px) {
+  .page {
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+    box-shadow: none;
+  }
+  header {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .contact-info {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 🖨️ Format untuk cetak PDF (A4) */
+@media print {
+  body {
+    background: white;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    box-shadow: none;
+  }
+}
+
   </style>
-  <!-- Google Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header">
+  <div class="page">
+    <header>
       <div>
         <h1>Galang</h1>
-        <div style="font-size: 11.5px; color:#555;">Curriculum Vitae</div>
+        <p class="tagline">Finance & Technology Enthusiast | Problem Solver | Fast Learner</p>
       </div>
-      <div class="contact">
-        <div><i class="material-icons">place</i> Jakarta Barat</div>
-        <div><i class="material-icons">phone</i> 0821-2464-3404</div>
-        <div><i class="material-icons">email</i> aqtife@gmail.com</div>
+      <div class="contact-info">
+        <p><span class="icon">✉</span> aqtife@gmail.com</p>
+        <p><span class="icon">☎</span> +62 821-2464-3403</p>
+        <p><span class="icon">📍</span> Mangga Dua VIII Blok B No.73, Jakarta Utara</p>
       </div>
-    </div>
+    </header><section>
+  <h2>Ringkasan Profesional</h2>
+  <p>Saya adalah individu yang disiplin, pekerja keras, dan komunikatif dengan pengalaman kerja di berbagai bidang operasional. Memiliki kemampuan membaca dan menganalisis berita keuangan, trading, serta investasi. Selain itu, saya juga menguasai keterampilan coding dasar (HTML, CSS, JavaScript) yang mendukung perkembangan teknologi. Dengan kemampuan multitasking, problem solving, dan manajemen waktu yang baik, saya siap berkontribusi untuk mendukung keberhasilan tim maupun perusahaan.</p>
+</section>
 
-    <h2>Ringkasan</h2>
-    <p>Pekerja disiplin dengan pengalaman di bidang kebersihan sejak 2022. Memiliki minat pada pembuatan website sederhana, pemahaman dasar finance & trading, serta terbiasa belajar mandiri.</p>
+<section>
+  <h2>Pengalaman Kerja</h2>
+  <ul>
+    <li><strong>Karyawan Kebersihan</strong> – Menjaga kebersihan, kerapihan, dan kenyamanan lingkungan kerja.</li>
+    <li><strong>Helper Produksi</strong> – Membantu proses produksi di perusahaan manufaktur, multitasking di berbagai lini produksi.</li>
+    <li><strong>Penjaga Stand Thai Tea</strong> – Melayani pelanggan, mengelola penjualan, dan menjaga kualitas produk.</li>
+  </ul>
+</section>
 
-    <h2>Pengalaman Kerja</h2>
-    <b>Petugas Kebersihan – Glodok Plaza, Jakarta Barat</b> (Agustus 2022 – Sekarang)
+<section>
+  <h2>Keterampilan</h2>
+  <div class="two-columns">
     <ul>
-      <li>Menjaga kebersihan & kenyamanan area kerja</li>
-      <li>Bertanggung jawab perawatan fasilitas umum</li>
-      <li>Disiplin & konsisten sesuai standar</li>
+      <li>Finance & Investment</li>
+      <li>Trading</li>
+      <li>Analisis Berita Keuangan</li>
     </ul>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Problem Solving</li>
+      <li>Manajemen Waktu</li>
+    </ul>
+  </div>
+</section>
 
-    <h2>Keterampilan</h2>
-    <div class="skills">
-      <div class="skill-tag">Kebersihan & Pemeliharaan</div>
-      <div class="skill-tag">HTML & CSS</div>
-      <div class="skill-tag">Finance Dasar</div>
-      <div class="skill-tag">Trading & Investment</div>
-      <div class="skill-tag">Manajemen Waktu</div>
-      <div class="skill-tag">Disiplin Kerja</div>
-    </div>
+<section>
+  <h2>Pendidikan</h2>
+  <ul>
+    <li><strong>Lulusan Sekolah Dasar (SD)</strong></li>
+  </ul>
+</section>
 
-    <h2>Portfolio</h2>
-    <div class="portfolio">
-      <div class="portfolio-item">
-        <b>MyStartup Website</b><br>
-        Landing page sederhana (HTML, CSS)
-      </div>
-      <div class="portfolio-item">
-        <b>Card Profile Project</b><br>
-        Website profil sederhana (HTML, CSS)
-      </div>
-    </div>
-
-    <h2>Pendidikan</h2>
-    <p>Sekolah Dasar</p>
   </div>
 </body>
 </html>
