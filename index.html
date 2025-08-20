@@ -4,250 +4,161 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Galang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 28px;
-      color: #333;
-      line-height: 1.4;
-      font-size: 11.5px;
+      margin: 40px;
+      color: #222;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 4px;
+      letter-spacing: 1px;
+    }
+    .tagline {
+      font-size: 13px;
+      color: #444;
+      letter-spacing: 0.5px;
+    }
+    .tagline span {
+      border-left: 1px solid #444;
+      padding: 0 8px;
     }
     .header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       border-bottom: 3px solid #000;
-      padding-bottom: 6px;
-      margin-bottom: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 18px;
     }
-    .header h1 {
-      font-size: 24px;
-      margin: 0;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-    }
-    .tagline {
+    .contact {
       font-size: 12px;
-      color: #555;
-      margin-top: 3px;
-    }
-    .info {
-      font-size: 11px;
       text-align: right;
       line-height: 1.6;
     }
-    .info svg {
-      width: 12px;
-      height: 12px;
-      vertical-align: middle;
-      margin-right: 4px;
-      fill: #000;
+    .contact i {
+      margin-right: 6px;
+      color: #000;
     }
-    h2 {
-      font-size: 14px;
-      margin-top: 10px;
-      border-bottom: 1px solid #888;
-      padding-bottom: 2px;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+    .section {
+      margin-bottom: 16px;
     }
-    h2 svg {
-      fill: #1E3A8A;
+    .section h2 {
+      font-size: 16px;
+      border-bottom: 1px solid #999;
+      margin-bottom: 8px;
+      padding-bottom: 4px;
+      font-weight: bold;
+      color: #000;
     }
-    p { margin: 4px 0; }
-    ul { margin: 3px 0 0 16px; padding: 0; }
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-      margin-top: 5px;
+    .section h2 i {
+      margin-right: 8px;
+      color: #000;
     }
-    .skill {
-      border: 1px solid #aaa;
-      padding: 4px 6px;
-      border-radius: 5px;
-      font-size: 11px;
-      background: #fafafa;
-      display: flex;
-      align-items: center;
-      gap: 5px;
+    .skills li, .edu li, .exp li, .org li {
+      margin-bottom: 6px;
     }
-    .skill svg { fill: #1E3A8A; flex-shrink: 0; }
+    ul {
+      padding-left: 18px;
+    }
     .footer {
-      margin-top: 12px;
-      font-size: 11px;
       text-align: center;
+      font-size: 11px;
+      margin-top: 25px;
+      color: #555;
     }
-    .footer a {
+    a {
+      color: #000;
       text-decoration: none;
-      color: #333;
-    }
-    .footer svg {
-      vertical-align: middle;
-      margin-right: 5px;
-      fill: #000;
     }
   </style>
 </head>
 <body>
+
   <!-- Header -->
   <div class="header">
     <div>
       <h1>GALANG</h1>
-      <div class="tagline">Finance & Technology Enthusiast | Problem Solver | Fast Learner</div>
+      <div class="tagline">
+        Finance & Technology Enthusiast <span></span> Problem Solver <span></span> Fast Learner
+      </div>
     </div>
-    <div class="info">
-      <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
-      1.1.9 2 2 2h16c1.1 0 2-.9 
-      2-2V6c0-1.1-.9-2-2-2zm0 
-      4-8 5-8-5V6l8 5 8-5v2z"/></svg> oshinairu@gmail.com</div>
-      <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 
-      15.053 0 006.59 6.59l2.2-2.2a1 
-      1 0 011.11-.21c1.21.49 2.53.76 
-      3.91.76.55 0 1 .45 
-      1 1V20c0 .55-.45 1-1 
-      1C10.61 21 3 13.39 3 4c0-.55.45-1 
-      1-1h3.5c.55 0 1 .45 1 
-      1 0 1.38.26 2.7.76 
-      3.91.17.41.07.88-.22 
-      1.12l-2.2 2.2z"/></svg> +62 821-2464-3404</div>
-      <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 
-      5 9c0 5.25 7 13 7 13s7-7.75 
-      7-13c0-3.87-3.13-7-7-7zm0 
-      9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 
-      2.5-2.5 2.5 1.12 2.5 
-      2.5-1.12 2.5-2.5 2.5z"/></svg> Mangga Dua VII Blok B No.73, Jakarta Utara</div>
+    <div class="contact">
+      <div><i class="fa-solid fa-envelope"></i> oshinaru@gmail.com</div>
+      <div><i class="fa-solid fa-phone"></i> +62 821-4624-3404</div>
+      <div><i class="fa-solid fa-location-dot"></i> Mangga Dua VII Blok N No 73, Jakarta Utara</div>
+      <div><i class="fa-brands fa-github"></i> <a href="https://github.com/awth">github.com/awth</a></div>
     </div>
   </div>
 
-  <!-- Ringkasan -->
-  <h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 12c2.7 
-    0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 
-    7.2 4.5 7.2 7.2 9.3 12 
-    12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 
-    4.8V22h19.2v-2.8c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
-    Ringkasan Profesional
-  </h2>
-  <p>
-    Individu disiplin, pekerja keras, dan komunikatif dengan pengalaman kerja di bidang operasional.
-    Saat ini bekerja di PT TCP Internusa sebagai Karyawan Kebersihan sejak 2022.
-    Memiliki minat kuat pada dunia keuangan & teknologi: membaca berita keuangan, menganalisis investasi & trading,
-    serta menguasai dasar HTML, CSS, dan JavaScript untuk pembuatan web sederhana.
-    Berbekal multitasking, problem solving, dan manajemen waktu, siap beradaptasi dan memberi kontribusi nyata.
-  </p>
+  <!-- Ringkasan Profesional -->
+  <div class="section">
+    <h2><i class="fa-solid fa-user-tie"></i> Ringkasan Profesional</h2>
+    <p>
+      Individu disiplin, pekerja keras, dan komunikatif dengan pengalaman kerja di bidang operasional. 
+      Saat ini bekerja di PT TCP Internusa sebagai Karyawan Kebersihan sejak 2022. 
+      Memiliki minat kuat pada dunia keuangan & teknologi: membaca berita keuangan, menganalisis investasi & trading, 
+      serta menguasai dasar HTML, CSS, dan JavaScript untuk pembuatan web sederhana. 
+      Terampil multitasking, problem solving, dan manajemen waktu untuk memberikan kontribusi nyata.
+    </p>
+  </div>
 
-  <!-- Pengalaman -->
-  <h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M10 
-    2h4v2h5a1 1 0 011 1v4h-2V6H6v3H4V5a1 
-    1 0 011-1h5V2zm-6 8h16v10a1 1 0 
-    01-1 1H5a1 1 0 01-1-1V10zm2 
-    2v6h12v-6H6z"/></svg>
-    Pengalaman Kerja
-  </h2>
-  <p><b>Karyawan Kebersihan — PT TCP Internusa (2022 – Sekarang)</b></p>
-  <ul>
-    <li>Menjaga kebersihan, kerapihan, dan kenyamanan area kerja sesuai standar perusahaan.</li>
-    <li>Mendukung kelancaran aktivitas operasional dengan memastikan lingkungan kerja aman dan teratur.</li>
-    <li>Bekerja disiplin, konsisten, serta berkoordinasi dengan tim.</li>
-  </ul>
+  <!-- Pengalaman Kerja -->
+  <div class="section">
+    <h2><i class="fa-solid fa-briefcase"></i> Pengalaman Kerja</h2>
+    <ul class="exp">
+      <li>
+        <strong>Karyawan Kebersihan – PT TCP Internusa (2022 – Sekarang)</strong><br>
+        Menjaga kebersihan, kerapihan, dan kenyamanan area kerja sesuai standar perusahaan. 
+        Mendukung kelancaran aktivitas operasional dengan menjaga lingkungan kerja aman dan tertib. 
+        Bekerja disiplin, konsisten, serta berkoordinasi dengan tim.
+      </li>
+    </ul>
+  </div>
 
   <!-- Keterampilan -->
-  <h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M19.14 
-    12.94a1.5 1.5 0 000-1.88l2-3.46a.5.5 0 
-    00-.43-.76H16.59l-1.16-2A.5.5 0 
-    0015 4H9a.5.5 0 00-.43.24L7.41 
-    6.88H3.29a.5.5 0 
-    00-.43.76l2 3.46a1.5 1.5 0 
-    000 1.88l-2 3.46a.5.5 0 
-    00.43.76H7.41l1.16 2A.5.5 0 
-    009 20h6a.5.5 0 00.43-.24l1.16-2h4.12a.5.5 
-    0 00.43-.76z"/></svg>
-    Keterampilan
-  </h2>
-  <div class="skills">
-    <div class="skill"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 
-    21.35l-1.45-1.32C5.4 15.36 2 
-    12.28 2 8.5A5.5 5.5 0 0112 
-    3a5.5 5.5 0 0110 
-    5.5c0 3.78-3.4 6.86-8.55 
-    11.54z"/></svg>Finance & Investment – Dasar manajemen keuangan & strategi investasi.</div>
-    <div class="skill"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M3 
-    17h18v2H3zm0-7h18v2H3zm0-7h18v2H3z"/></svg>Trading – Membaca tren pasar & ambil keputusan cepat.</div>
-    <div class="skill"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M21 
-    6h-2v9H5v2h16z"/></svg>Analisis Berita Keuangan – Menilai dampak berita ekonomi.</div>
-    <div class="skill"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 
-    2l4 4H8l4-4zm0 20l-4-4h8l-4 
-    4zM2 12l4-4v8l-4-4zm20 
-    0l-4 4V8l4 4z"/></svg>HTML, CSS, JavaScript – Dasar pembuatan website sederhana.</div>
-    <div class="skill"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 
-    8c-2.21 0-4 .79-4 2s1.79 2 4 
-    2 4-.79 4-2-1.79-2-4-2z"/><path d="M6 
-    14c0-2.21 3.58-4 6-4s6 1.79 6 
-    4-3.58 4-6 4-6-1.79-6-4z"/></svg>Problem Solving – Menemukan solusi praktis.</div>
-    <div class="skill"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 
-    20.5a8.5 8.5 0 110-17 8.5 
-    8.5 0 010 17zm0-15a6.5 6.5 0 
-    100 13 6.5 6.5 0 000-13z"/></svg>Manajemen Waktu – Menyelesaikan target tepat waktu.</div>
+  <div class="section">
+    <h2><i class="fa-solid fa-lightbulb"></i> Keterampilan</h2>
+    <ul class="skills">
+      <li><strong>Finance & Investment</strong> – Pemahaman dasar strategi keuangan dan manajemen investasi.</li>
+      <li><strong>Trading</strong> – Mampu membaca tren pasar dan mengambil keputusan cepat.</li>
+      <li><strong>Analisis Berita Keuangan</strong> – Mengkaji dampak berita ekonomi pada kondisi pasar.</li>
+      <li><strong>HTML, CSS, JavaScript</strong> – Membuat dan mengelola website sederhana.</li>
+      <li><strong>Problem Solving</strong> – Menemukan solusi praktis dalam situasi kompleks.</li>
+      <li><strong>Manajemen Waktu</strong> – Menyelesaikan tugas sesuai target secara teratur.</li>
+    </ul>
+  </div>
+
+  <!-- Pendidikan -->
+  <div class="section">
+    <h2><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h2>
+    <ul class="edu">
+      <li><strong>SD Negeri Tanah Tinggi 05 Pagi (2014 – 2020)</strong> – 
+        Menyelesaikan pendidikan dasar dengan baik, membangun dasar disiplin, kerja keras, dan kemampuan komunikasi.</li>
+      <li><strong>Belajar Mandiri (Finance, Trading, HTML, CSS, JavaScript)</strong> – 
+        Mengembangkan keterampilan secara otodidak melalui kursus online, bacaan, dan praktik langsung. 
+        Mampu memahami dasar keuangan, membaca tren pasar, dan membangun website sederhana.</li>
+    </ul>
   </div>
 
   <!-- Organisasi -->
-  <h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M16 
-    11c1.7 0 3-1.3 3-3S17.7 5 16 
-    5s-3 1.3-3 3 1.3 3 3 
-    3zM8 11c1.7 0 3-1.3 3-3S9.7 5 8 
-    5 5 6.3 5 8s1.3 3 3 
-    3zm0 2c-2.3 0-7 1.2-7 
-    3.5V20h14v-3.5C15 14.2 10.3 
-    13 8 13zm8 0c-.3 0-.7 0-1 
-    .1 1.2.8 2 1.9 2 3.4V20h7v-3.5c0-2.3-4.7-3.5-8-3.5z"/></svg>
-    Organisasi
-  </h2>
-  <p><b>Anggota Paguyuban — Mangga Dua (2023 – Sekarang)</b></p>
-  <ul>
-    <li>Aktif dalam kegiatan sosial & kemasyarakatan di lingkungan tempat tinggal.</li>
-    <li>Berpartisipasi dalam program gotong royong & koordinasi antarwarga.</li>
-    <li>Melatih kemampuan komunikasi, kerja sama tim, dan kepedulian masyarakat.</li>
-  </ul>
-
-  <!-- Pendidikan -->
-  <h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 
-    3L1 9l11 6 9-4.91V17h2V9L12 
-    3z"/></svg>
-    Pendidikan
-  </h2>
-  <ul>
-    <li>SD Negeri Tanah Tinggi 06 Pagi (2014 – 2020) – Menyelesaikan pendidikan dasar dengan baik.</li>
-    <li>Belajar Mandiri: Finance, Trading, HTML, CSS, JavaScript – Mengembangkan keterampilan melalui sumber online & praktik langsung.</li>
-  </ul>
+  <div class="section">
+    <h2><i class="fa-solid fa-people-group"></i> Organisasi</h2>
+    <ul class="org">
+      <li><strong>Anggota Paguyuban – Mangga Dua (2023 – Sekarang)</strong> – 
+        Aktif dalam kegiatan sosial & kemasyarakatan di lingkungan tempat tinggal. 
+        Berpartisipasi dalam program gotong royong & koordinasi antarwarga. 
+        Melatih kemampuan komunikasi, kerja sama tim, dan kepedulian masyarakat.</li>
+    </ul>
+  </div>
 
   <!-- Footer -->
   <div class="footer">
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M12 
-    .297c-6.63 0-12 5.373-12 
-    12 0 5.303 3.438 9.8 8.205 
-    11.385.6.113.82-.258.82-.577 
-    0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61 
-    -.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.084-.729.084-.729 
-    1.205.084 1.84 1.237 1.84 1.237 
-    1.07 1.835 2.807 1.305 
-    3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 
-    0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
-    0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 
-    3-.405 1.02.006 2.04.138 3 
-    .405 2.28-1.552 3.285-1.23 
-    3.285-1.23.645 1.653.24 2.873.12 
-    3.176.765.84 1.23 1.91 1.23 
-    3.22 0 4.61-2.805 5.625-5.475 
-    5.92.435.372.81 1.102.81 
-    2.222 0 1.606-.015 
-    2.896-.015 3.286 0 .315.21.69.825.57C20.565 
-    22.092 24 17.592 24 
-    12.297c0-6.627-5.373-12-12-12"/></svg>
-    <a href="https://github.com/awthentice">github.com/awth
+    📌 Committed to continuous learning and growth in finance and technology fields.
+  </div>
+
+</body>
+</html>
